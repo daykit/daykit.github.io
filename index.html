@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daykit</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 64px 20px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, "Segoe UI", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    line-height: 1.7; color: #1c202a; background: #f7f8fa;
+  }
+  .wrap { max-width: 560px; width: 100%; }
+  h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: -0.03em; }
+  .tag { margin: 0 0 40px; color: #6b7280; font-size: 15px; }
+  h2 {
+    margin: 0 0 14px; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase; color: #8a93a3;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li + li { margin-top: 10px; }
+  a {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 16px 18px; border: 1px solid #dfe3ea; border-radius: 12px;
+    background: #fff; text-decoration: none; color: inherit;
+  }
+  a:hover { border-color: #4f86e8; }
+  a strong { font-size: 16px; }
+  a span { font-size: 13px; color: #6b7280; }
+  footer { margin-top: 40px; font-size: 13px; color: #8a93a3; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #101218; color: #e5e8ef; }
+    a { background: #191c24; border-color: #2a2e39; }
+    a:hover { border-color: #8fb9ff; }
+    .tag, a span, footer { color: #9aa2b1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>daykit</h1>
+  <p class="tag">효율을 높이고 일상을 단순하게 만드는 실용적인 도구를 만듭니다.</p>
+
+  <h2>개인정보처리방침</h2>
+  <ul>
+    <li>
+      <a href="./guseok-keyboard/">
+        <strong>구석키보드</strong>
+        <span>폴더블 3분할 천지인 자판</span>
+      </a>
+    </li>
+  </ul>
+
+  <footer>문의 daykit.apps@gmail.com</footer>
+</div>
+</body>
+</html>
