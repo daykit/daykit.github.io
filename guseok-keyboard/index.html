@@ -59,12 +59,14 @@
 
 <header>
   <h1>구석키보드 개인정보처리방침</h1>
-  <p>최종 수정일 2026년 8월 8일 · 시행일 2026년 8월 8일</p>
+  <p>최종 수정일 2026년 9월 13일 · 시행일 2026년 9월 13일</p>
 </header>
 
 <div class="highlight">
   <strong>구석키보드는 사용자의 어떠한 개인정보도 수집·저장·전송하지 않습니다.</strong><br>
-  앱은 네트워크 권한 자체를 가지고 있지 않아, 기술적으로 외부로 데이터를 보낼 수 없습니다.
+  앱은 네트워크 권한 자체를 가지고 있지 않아, 기술적으로 외부로 데이터를 보낼 수 없습니다.<br>
+  선택 기능인 음성 입력을 쓸 때만 기기에 설치된 음성 인식기(예: Google 음성 입력)에
+  그 순간의 말소리가 전달됩니다. 자세한 내용은 아래 <strong>4. 음성 입력</strong>을 확인해 주세요.
 </div>
 
 <h2>1. 수집하는 개인정보 항목</h2>
@@ -87,35 +89,62 @@
   <tr><th>목적</th><td>키를 눌렀을 때의 촉각 피드백</td></tr>
   <tr><th>선택 여부</th><td>앱 설정의 &lsquo;키 진동&rsquo;에서 언제든 끌 수 있습니다</td></tr>
 </table>
+<table>
+  <tr><th>권한</th><td>RECORD_AUDIO (마이크)</td></tr>
+  <tr><th>목적</th><td>음성 입력 &mdash; 사용자가 자판의 마이크 버튼을 눌러 말한 내용을 글자로 받아쓰기</td></tr>
+  <tr><th>선택 여부</th><td>허용하지 않아도 자판의 다른 기능은 그대로 사용할 수 있습니다.
+    처음 마이크 버튼을 눌렀을 때만 권한을 요청하며, 앱 설정의 &lsquo;음성 입력&rsquo;에서 기능을 끌 수 있습니다</td></tr>
+  <tr><th>사용 시점</th><td>마이크 버튼을 눌러 말하는 동안에만 마이크가 열립니다.
+    자판을 켜 두었다고 해서 주변 소리를 듣는 일은 없습니다</td></tr>
+</table>
 <p>이 외에 구석키보드가 요청하는 권한은 없습니다. 특히 다음 권한은 <strong>사용하지 않습니다.</strong></p>
 <ul>
   <li>인터넷 / 네트워크 접근 권한</li>
   <li>접근성 서비스 권한</li>
-  <li>연락처, 위치, 저장소, 카메라, 마이크 권한</li>
+  <li>연락처, 위치, 저장소, 카메라 권한</li>
 </ul>
 
-<h2>4. 클립보드</h2>
+<h2>4. 음성 입력</h2>
+<p>자판 위쪽의 마이크 버튼을 누르면 말한 내용을 글자로 받아쓰는 선택 기능입니다.
+쓰지 않으면 마이크는 한 번도 열리지 않습니다.</p>
+<ul>
+  <li>마이크는 <strong>마이크 버튼을 눌러 말하는 동안에만</strong> 열리고, 입력이 끝나면 즉시 닫힙니다.</li>
+  <li>받아쓰기는 구석키보드가 직접 하지 않습니다. <strong>기기에 설치된 음성 인식기</strong>(예:
+      Google 음성 입력)에 그 순간의 말소리를 넘기고 글자만 돌려받습니다.
+      말소리가 그 인식기를 통해 외부로 전송되는지 여부와 그 처리·보관 방식은
+      <strong>해당 음성 인식기 제공자의 개인정보처리방침</strong>을 따릅니다.</li>
+  <li>구석키보드는 녹음 파일이나 받아쓴 글을 <strong>저장하지 않으며</strong>, 자체 서버로 보내지
+      않습니다(네트워크 권한이 없습니다).</li>
+  <li><strong>비밀번호 입력란에서는 음성 입력을 제공하지 않습니다.</strong> 마이크 버튼 자체가 보이지 않습니다.</li>
+  <li>앱 설정의 &lsquo;음성 입력&rsquo;을 끄면 마이크 버튼이 사라집니다.
+      기기의 앱 권한 설정에서 마이크 권한을 철회해도 됩니다.</li>
+</ul>
+
+<h2>5. 클립보드</h2>
 <p>구석키보드는 클립보드 내용을 읽거나 기록하지 않습니다.
 복사·붙여넣기는 각 앱이 제공하는 기본 기능을 그대로 사용하며,
 구석키보드는 그 과정에 관여하지 않습니다.</p>
 
-<h2>5. 제3자 제공 및 위탁</h2>
+<h2>6. 제3자 제공 및 위탁</h2>
 <p>수집하는 정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 정보도 없습니다.
 광고 SDK, 분석 SDK, 크래시 리포팅 SDK를 포함해 어떠한 외부 라이브러리도 탑재하지 않았습니다.</p>
+<p>다만 사용자가 음성 입력을 쓰는 동안에는, 위 <strong>4. 음성 입력</strong>에 적은 대로
+기기에 설치된 음성 인식기에 말소리가 전달됩니다. 구석키보드는 그 인식기를 호출할 뿐이며,
+전달된 말소리의 처리는 해당 제공자의 방침에 따릅니다.</p>
 
-<h2>6. 앱에 저장되는 설정값</h2>
-<p>야간 모드, 키 진동, 커서 이동, 겹받침 조합 등 사용자가 고른 설정은
+<h2>7. 앱에 저장되는 설정값</h2>
+<p>야간 모드, 키 진동, 커서 이동, 겹받침 조합, 음성 입력 사용 여부 등 사용자가 고른 설정은
 기기 내부의 앱 전용 저장 공간에만 보관되며 외부로 나가지 않습니다.
 앱을 삭제하면 함께 삭제됩니다.</p>
 
-<h2>7. 아동의 개인정보</h2>
+<h2>8. 아동의 개인정보</h2>
 <p>구석키보드는 만 13세 미만 아동을 대상으로 하지 않으며,
 아동을 포함한 어떤 사용자로부터도 개인정보를 수집하지 않습니다.</p>
 
-<h2>8. 처리방침의 변경</h2>
+<h2>9. 처리방침의 변경</h2>
 <p>이 처리방침이 변경되는 경우 이 페이지에 변경 내용과 시행일을 게시합니다.</p>
 
-<h2>9. 문의처</h2>
+<h2>10. 문의처</h2>
 <table>
   <tr><th>개발자</th><td>daykit</td></tr>
   <tr><th>앱 이름</th><td>구석키보드 (kr.guseok.keyboard)</td></tr>
@@ -126,14 +155,22 @@
 <h2>English Summary</h2>
 <p><strong>Guseok Keyboard collects no personal data whatsoever.</strong>
 The app does not declare the INTERNET permission, so it is technically incapable of
-transmitting any data off the device.</p>
+transmitting any data off the device by itself. The optional voice input feature passes your
+speech to the speech recognizer installed on your device; see the note below.</p>
 <ul>
   <li>Keystrokes are composed into text and delivered directly to the active app's input field.
       They are never stored, logged, or transmitted.</li>
   <li>No user dictionary, learning, or prediction data is created.</li>
   <li>No accessibility service, no clipboard access, no network access.</li>
-  <li>The only permission requested is VIBRATE, used for key haptic feedback,
-      and it can be disabled in the app's settings.</li>
+  <li>Permissions requested: VIBRATE for key haptic feedback, and RECORD_AUDIO for the optional
+      voice input feature. Both can be turned off in the app's settings.</li>
+  <li><strong>Voice input</strong> is optional and opt-in. The microphone opens only while you hold
+      a conversation with it &mdash; that is, after you tap the microphone button and until the
+      dictation ends. Recognition is performed by the speech recognizer installed on the device
+      (for example Google voice typing); whether that service sends audio off the device, and how
+      it handles or retains it, is governed by that provider's privacy policy. Guseok Keyboard
+      stores neither the audio nor the recognized text, and voice input is not offered in
+      password fields.</li>
   <li>No advertising, analytics, or crash-reporting SDKs are bundled.</li>
   <li>User preferences (dark mode, vibration, etc.) are stored only in the app's private
       storage on the device and are deleted when the app is uninstalled.</li>
